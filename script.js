@@ -1,3 +1,5 @@
+// Author: Akinyemi Boluwatife Oluwasegun
+// linkedin: https://www.linkedin.com/in/boluwatife-akinyemi-230b9828a
 // Logic for the code
 "use strict";
 document.querySelector(".again-btn");
