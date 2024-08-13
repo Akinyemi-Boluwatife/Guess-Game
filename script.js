@@ -30,16 +30,20 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   } else if (guess !== randomNumber) {
     if (score > 1) {
-      if (guess > randomNumber) {
-        document.querySelector(".message").textContent = "Too high";
-        score--;
-        document.querySelector(".score").textContent = score;
-      } else {
-        //too low
-        document.querySelector(".message").textContent = "Too low";
-        score--;
-        document.querySelector(".score").textContent = score;
-      }
+      guess > randomNumber
+        ? (document.querySelector(".message").textContent = "Too high")
+        : (document.querySelector(".message").textContent = "Too low");
+      score--;
+      //   if (guess > randomNumber) {
+      //     document.querySelector(".message").textContent = "Too high";
+      //     score--;
+      //     document.querySelector(".score").textContent = score;
+      //   } else {
+      //     //too low
+      //     document.querySelector(".message").textContent = "Too low";
+      //     score--;
+      //     document.querySelector(".score").textContent = score;
+      //   }
     } else {
       //when score is less than 1
       document.querySelector(".message").textContent = "❌You've Lost";
